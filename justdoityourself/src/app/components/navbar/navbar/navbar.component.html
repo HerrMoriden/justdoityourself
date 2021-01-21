@@ -1,8 +1,8 @@
 <!--Navbar-->
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark cyan" [containerInside]="false">
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark special-color-dark" [containerInside]="false">
 
   <!-- Navbar brand -->
-  <mdb-navbar-brand><a class="navbar-brand" href="#">Navbar</a></mdb-navbar-brand>
+  <mdb-navbar-brand><a routerLink="/" class="navbar-brand" href="#">Navbar</a></mdb-navbar-brand>
 
   <!-- Collapsible content -->
   <links>
@@ -18,7 +18,7 @@
 
       <!-- Dropdown -->
       <li class="nav-item dropdown" dropdown>
-        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light">
           <mdb-icon fas icon="user"></mdb-icon> Profile<span class="caret"></span></a>
         <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
           <a class="dropdown-item waves-light" mdbWavesEffect href="#">My account</a>
@@ -26,6 +26,11 @@
         </div>
       </li>
 
+      <!-- Login link -->
+      <li class="nav-item" >
+        <a mdbWavesEffect type="button" class="nav-link waves-light" (click)="openLoginModal()">
+          <mdb-icon fas icon="user"></mdb-icon> Login<span class="caret"></span></a>
+      </li>
     </ul>
     <!-- Links -->
   </links>

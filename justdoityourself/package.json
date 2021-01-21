@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build ",
-    "start:dev": "ng serve",
+    "build": "ng build",
+    "start:dev": "ng serve --watch",
     "build:dev": "ng build --watch",
     "test": "ng test",
     "lint": "ng lint",
@@ -23,7 +23,6 @@
     "@angular/platform-browser-dynamic": "~10.2.0",
     "@angular/router": "~10.2.0",
     "@fortawesome/fontawesome-free": "^5.15.2",
-    "@types/chart.js": "^2.9.29",
     "angular-bootstrap-md": "^10.1.1",
     "animate.css": "^4.1.1",
     "chart.js": "^2.5.0",
@@ -34,6 +33,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1002.0",
+    "@types/chart.js": "^2.9.29",
     "@angular/cli": "~10.2.0",
     "@angular/compiler-cli": "~10.2.0",
     "@types/node": "^12.11.1",
