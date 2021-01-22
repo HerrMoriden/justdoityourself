@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "justdoityourself-919ff": {
+      "hosting": {
+        "justdoityourself": [
+          "justdoityourself-919ff"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "justdoityourself-919ff"
+  }
+}

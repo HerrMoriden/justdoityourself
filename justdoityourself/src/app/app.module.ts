@@ -10,6 +10,9 @@ import { LandingPageModule } from './components/landing-page/landing-page.module
 import { FooterModule } from './components/footer/footer.module';
 import { LoginModule } from './components/login/login.module';
 import { LoginComponent } from './components/login/login/login.component';
+import {AngularFireModule} from "@angular/fire";
+import {environment} from "../environments/environment";
+import {AngularFirestoreModule} from "@angular/fire/firestore";
 
 @NgModule({
   declarations: [
@@ -18,6 +21,8 @@ import { LoginComponent } from './components/login/login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
     MDBBootstrapModule.forRoot(),
     NavbarModule,
     LandingPageModule,
