@@ -1,7 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
-import {ButtonsModule, IconsModule, ModalModule, WavesModule} from 'angular-bootstrap-md';
+import {
+  ButtonsModule,
+  IconsModule,
+  InputsModule,
+  InputUtilitiesModule,
+  ModalModule,
+  WavesModule
+} from 'angular-bootstrap-md';
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 
@@ -16,6 +24,9 @@ import {ButtonsModule, IconsModule, ModalModule, WavesModule} from 'angular-boot
     WavesModule,
     ButtonsModule,
     ModalModule,
+    ReactiveFormsModule,
+    InputUtilitiesModule,
+    InputsModule,
   ]
 })
 export class LoginModule { }
